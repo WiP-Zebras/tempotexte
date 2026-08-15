@@ -1,0 +1,8 @@
+preflight=PASS
+binary=/opt/zebras-worker-chromium-1234/chrome-headless-shell-linux64/chrome-headless-shell
+tests=PASS
+build=PASS
+server=PASS url=http://127.0.0.1:4173/
+browser=PASS
+dom=receipts/dom.html
+screenshots=screenshots/desktop.png,screenshots/mobile.png

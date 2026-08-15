@@ -1,0 +1,5 @@
+
+> tempotexte@0.1.0 build
+> node scripts/build.mjs
+
+Build terminé : public/ -> docs/
