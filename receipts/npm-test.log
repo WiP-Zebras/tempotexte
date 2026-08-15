@@ -1,0 +1,98 @@
+
+> tempotexte@0.1.0 test
+> node --test
+
+TAP version 13
+# Subtest: interface exposes a labelled editor and a logical result region
+ok 1 - interface exposes a labelled editor and a logical result region
+  ---
+  duration_ms: 1.011628
+  type: 'test'
+  ...
+# Subtest: interface loads the local estimator without a remote dependency
+ok 2 - interface loads the local estimator without a remote dependency
+  ---
+  duration_ms: 0.257945
+  type: 'test'
+  ...
+# Subtest: styles provide visible keyboard focus and responsive layout
+ok 3 - styles provide visible keyboard focus and responsive layout
+  ---
+  duration_ms: 0.149363
+  type: 'test'
+  ...
+# Subtest: empty text
+ok 4 - empty text
+  ---
+  duration_ms: 1.926474
+  type: 'test'
+  ...
+# Subtest: whitespace separates words
+ok 5 - whitespace separates words
+  ---
+  duration_ms: 0.242932
+  type: 'test'
+  ...
+# Subtest: punctuation does not create extra words
+ok 6 - punctuation does not create extra words
+  ---
+  duration_ms: 2.135665
+  type: 'test'
+  ...
+# Subtest: numbers are counted as words
+ok 7 - numbers are counted as words
+  ---
+  duration_ms: 0.149303
+  type: 'test'
+  ...
+# Subtest: unicode words are counted
+ok 8 - unicode words are counted
+  ---
+  duration_ms: 1.251837
+  type: 'test'
+  ...
+# Subtest: long text counts every token
+ok 9 - long text counts every token
+  ---
+  duration_ms: 2.40715
+  type: 'test'
+  ...
+# Subtest: 201 words take two minutes
+ok 10 - 201 words take two minutes
+  ---
+  duration_ms: 0.249332
+  type: 'test'
+  ...
+# Subtest: 200 words take one minute
+ok 11 - 200 words take one minute
+  ---
+  duration_ms: 0.14854
+  type: 'test'
+  ...
+# Subtest: one word takes one minute
+ok 12 - one word takes one minute
+  ---
+  duration_ms: 0.313257
+  type: 'test'
+  ...
+# Subtest: custom words per minute keeps the calculation deterministic
+ok 13 - custom words per minute keeps the calculation deterministic
+  ---
+  duration_ms: 0.432986
+  type: 'test'
+  ...
+# Subtest: estimating text does not require a network request
+ok 14 - estimating text does not require a network request
+  ---
+  duration_ms: 0.293107
+  type: 'test'
+  ...
+1..14
+# tests 14
+# suites 0
+# pass 14
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 107.02618
