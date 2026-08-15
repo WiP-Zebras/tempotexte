@@ -3,16 +3,44 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TempoTexte</title>
+  <meta name="description" content="Estime le temps nécessaire pour lire un texte, directement dans ton navigateur.">
+  <title>TempoTexte — Estimer un temps de lecture</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <h1>TempoTexte</h1>
-    <p>Le socle de l’estimateur est prêt.</p>
-    <label for="text">Colle ton texte</label>
-    <textarea id="text" rows="10" placeholder="Ton texte reste dans ton navigateur."></textarea>
-    <p id="result" role="status">Le temps de lecture apparaîtra ici.</p>
+  <main class="page-shell">
+    <header class="intro">
+      <p class="eyebrow">TEMPO TEXTE</p>
+      <h1>Combien de temps pour lire ton texte&nbsp;?</h1>
+      <p class="lede">Colle ton texte ci-dessous pour obtenir une estimation immédiate. Rien ne quitte ton navigateur.</p>
+    </header>
+
+    <form id="estimator" class="estimator" novalidate>
+      <div class="field">
+        <label for="text">Ton texte</label>
+        <textarea id="text" name="text" rows="12" required placeholder="Colle ou écris ton texte ici…" aria-describedby="text-help"></textarea>
+        <p id="text-help" class="help">Les espaces et la ponctuation sont pris en compte automatiquement.</p>
+      </div>
+      <div class="controls">
+        <div class="field speed-field">
+          <label for="speed">Vitesse de lecture</label>
+          <div class="input-with-unit">
+            <input id="speed" name="speed" type="number" min="1" max="2000" step="1" value="200" inputmode="numeric" required aria-describedby="speed-help">
+            <span aria-hidden="true">mots/min</span>
+          </div>
+          <p id="speed-help" class="help">La moyenne habituelle est de 200 mots par minute.</p>
+        </div>
+        <button type="submit">Estimer le temps</button>
+      </div>
+    </form>
+
+    <section class="result-panel" aria-labelledby="result-heading">
+      <h2 id="result-heading">Résultat</h2>
+      <p id="result" aria-live="polite" aria-atomic="true">Ton estimation apparaîtra ici.</p>
+    </section>
+
+    <footer><p>Calcul local, sans compte et sans collecte de texte.</p></footer>
   </main>
+  <script type="module" src="app.js"></script>
 </body>
 </html>
