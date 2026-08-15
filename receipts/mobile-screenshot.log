@@ -1,0 +1,15 @@
+[0815/034131.865502:ERROR:base/files/file_path_watcher_inotify.cc:925] Failed to read /proc/sys/fs/inotify/max_user_watches
+[0815/034131.865801:ERROR:content/app/content_main_runner_impl.cc:415] Failed to initialize cpuinfo
+[0815/034131.881779:ERROR:base/files/file_path_watcher_inotify.cc:925] Failed to read /proc/sys/fs/inotify/max_user_watches
+[0815/034131.883010:ERROR:content/app/content_main_runner_impl.cc:415] Failed to initialize cpuinfo
+[0815/034131.888584:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: Permission denied
+[0815/034131.892719:ERROR:base/files/file_path_watcher_inotify.cc:925] Failed to read /proc/sys/fs/inotify/max_user_watches
+[0815/034131.893039:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: Permission denied
+[0815/034131.893098:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: Permission denied
+[0815/034131.924461:WARNING:device/bluetooth/dbus/bluez_dbus_manager.cc:209] Floss manager service not available, cannot set Floss enable/disable.
+[0815/034131.963861:ERROR:base/files/file_path_watcher_inotify.cc:925] Failed to read /proc/sys/fs/inotify/max_user_watches
+[0815/034131.985682:WARNING:media/gpu/vaapi/vaapi_wrapper.cc:1655] drmGetDevices2() has not found any devices
+[0815/034131.988827:WARNING:sandbox/policy/linux/sandbox_linux.cc:405] InitializeSandbox() called with multiple threads in process gpu-process.
+[0815/034132.044132:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[0815/034132.044242:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+40507 bytes written to file screenshots/mobile.png
